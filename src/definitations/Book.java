@@ -8,5 +8,8 @@
 package definitations;
 
 public class Book {
+    private String bookName;
+    private String authorName;
+    private String ISBNNumber;
 
 }
