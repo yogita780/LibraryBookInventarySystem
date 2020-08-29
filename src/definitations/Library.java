@@ -8,4 +8,5 @@
 package definitations;
 
 public class Library {
+    private Book[] currentlyBooksAvailable;
 }
