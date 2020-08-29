@@ -8,4 +8,9 @@
 package definitations;
 
 public class Student {
+    private String firstNameOfStudent;
+    private String middleNameOfStudent;
+    private String lastNameOfStudent;
+    private long universityRollNumber;
+    private int numberOfIssuedBook;
 }
