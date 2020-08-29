@@ -7,8 +7,14 @@
 
 package definitations;
 
+import java.util.Arrays;
+
 public class Library {
     private Book[] currentlyBooksAvailable;
+
+    public Library(Book[] currentlyBooksAvailable) {
+        this.currentlyBooksAvailable = currentlyBooksAvailable;
+    }
 
     public Library() {
         Book book1 = new Book("Operating System Concept", "Avi Silberschaztz", "3456723456894");
@@ -27,4 +33,8 @@ public class Library {
         this.currentlyBooksAvailable = currentlyBooksAvailable;
     }
 
+    @Override
+    public String toString() {
+        return Arrays.toString(currentlyBooksAvailable);
+    }
 }
