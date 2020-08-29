@@ -66,6 +66,10 @@ public class Book {
         System.out.println("Thank you for renting book.");
     }
 
+    public void doReturn() {
+        System.out.println("Thank you for returning the book.");
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
