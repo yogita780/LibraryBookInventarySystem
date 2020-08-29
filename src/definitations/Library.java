@@ -54,4 +54,8 @@ public class Library {
     public void addBooks(String bookName) {
         System.out.println(bookName + ",is added successfully.");
     }
+
+    public void doCheckOut(String bookName) {
+        System.out.println(bookName + ",issued successfully");
+    }
 }
