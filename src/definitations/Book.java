@@ -27,6 +27,7 @@ public class Book {
     }
 
     public String getBookName() {
+
         return bookName;
     }
 
@@ -35,6 +36,7 @@ public class Book {
     }
 
     public String getAuthorName() {
+
         return authorName;
     }
 
@@ -43,10 +45,12 @@ public class Book {
     }
 
     public String getISBNNumber() {
+
         return ISBNNumber;
     }
 
     public void setISBNNumber(String ISBNNumber) {
+
         this.ISBNNumber = ISBNNumber;
     }
 
