@@ -55,4 +55,11 @@ public class Student {
         this.universityRollNumber = universityRollNumber;
     }
 
+    public Book[] getBooksIssuedByStudent() {
+        return BooksIssuedByStudent.clone();
+    }
+
+    public void setNumberOfIssuedBook(int numberOfIssuedBook) {
+        this.numberOfIssuedBook = numberOfIssuedBook;
+    }
 }
