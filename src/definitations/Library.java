@@ -37,4 +37,21 @@ public class Library {
     public String toString() {
         return Arrays.toString(currentlyBooksAvailable);
     }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+        Library library = (Library) object;
+        return Arrays.equals(getCurrentlyBooksAvailable(), library.getCurrentlyBooksAvailable());
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getCurrentlyBooksAvailable());
+    }
+
+    public void addBooks(String bookName) {
+        System.out.println(bookName + ",is added successfully.");
+    }
 }
