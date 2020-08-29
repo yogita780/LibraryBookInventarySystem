@@ -58,4 +58,8 @@ public class Library {
     public void doCheckOut(String bookName) {
         System.out.println(bookName + ",issued successfully");
     }
+
+    public void doReturn(String bookName) {
+        System.out.println(bookName + ",return successfully");
+    }
 }
