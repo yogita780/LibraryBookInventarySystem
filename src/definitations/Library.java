@@ -62,4 +62,11 @@ public class Library {
     public void doReturn(String bookName) {
         System.out.println(bookName + ",return successfully");
     }
+
+    public void listBooks() {
+        for (Book bookObject : this.currentlyBooksAvailable) {
+            System.out.println(bookObject);
+
+        }
+    }
 }
