@@ -14,6 +14,14 @@ public class Student {
     private long universityRollNumber;
     private int numberOfIssuedBook;
 
+    public Student(String firstNameOfStudent, String middleNameOfStudent, String lastNameOfStudent, long universityRollNumber, int numberOfIssuedBook) {
+        this.firstNameOfStudent = firstNameOfStudent;
+        this.middleNameOfStudent = middleNameOfStudent;
+        this.lastNameOfStudent = lastNameOfStudent;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfIssuedBook = numberOfIssuedBook;
+    }
+
     public String getFirstNameOfStudent() {
         return firstNameOfStudent;
     }
