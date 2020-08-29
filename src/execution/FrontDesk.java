@@ -7,8 +7,10 @@
 
 package execution;
 
+import java.util.Scanner;
+
 public class FrontDesk {
     public static void main(String[] args) {
-
+        Scanner scanner = new Scanner(System.in);
     }
 }
