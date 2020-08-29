@@ -13,6 +13,7 @@ public class Student {
     private String lastNameOfStudent;
     private long universityRollNumber;
     private int numberOfIssuedBook;
+    private Book[] BooksIssuedByStudent;
 
     public Student(String firstNameOfStudent, String middleNameOfStudent, String lastNameOfStudent, long universityRollNumber, int numberOfIssuedBook) {
         this.firstNameOfStudent = firstNameOfStudent;
@@ -54,11 +55,4 @@ public class Student {
         this.universityRollNumber = universityRollNumber;
     }
 
-    public int getNumberOfIssuedBook() {
-        return numberOfIssuedBook;
-    }
-
-    public void setNumberOfIssuedBook(int numberOfIssuedBook) {
-        this.numberOfIssuedBook = numberOfIssuedBook;
-    }
 }
