@@ -62,6 +62,10 @@ public class Book {
         );
     }
 
+    public void doCheckOut() {
+        System.out.println("Thank you for renting book.");
+    }
+
     @Override
     public boolean equals(Object object) {
         if (this == object) return true;
