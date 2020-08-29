@@ -7,6 +7,8 @@
 
 package definitations;
 
+import java.util.Arrays;
+
 public class Student {
     private String firstNameOfStudent;
     private String middleNameOfStudent;
@@ -61,5 +63,10 @@ public class Student {
 
     public void setNumberOfIssuedBook(int numberOfIssuedBook) {
         this.numberOfIssuedBook = numberOfIssuedBook;
+    }
+
+    @Override
+    public String toString() {
+        return Arrays.toString(BooksIssuedByStudent);
     }
 }
