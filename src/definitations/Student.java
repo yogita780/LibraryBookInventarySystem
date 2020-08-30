@@ -26,6 +26,10 @@ public class Student {
         this.numberOfIssuedBook = numberOfIssuedBook;
     }
 
+    public Student() {
+
+    }
+
     public String getFirstNameOfStudent() {
         return firstNameOfStudent;
     }

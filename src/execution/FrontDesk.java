@@ -21,7 +21,7 @@ public class FrontDesk {
 
     public static void main(String[] args) {
         Scanner scannerObject = new Scanner(System.in);
-        Book bookobject = new Book();
+        Book bookObject = new Book();
         Library libraryObject = new Library();
         Student studentObject = new Student();
         System.out.println("enter your first name");
@@ -40,7 +40,36 @@ public class FrontDesk {
         System.out.println("show me all my issues books:");
         System.out.println("4.exit:");
         System.out.println("ENTER YOUR CHOICE FROM:[1,2,3,4]");
+        int choice = scannerObject.nextInt();
+        String bookName;
+        int booksIssued;
+        if (choice <= 4) {
+            switch (choice) {
+                case ISSUE_A_BOOK:
+                    System.out.println("ENTER THE NAME OF THE BOOK YOU WANT TO ISSUE:");
+                    scannerObject.nextLine();
+                    bookName = scannerObject.nextLine();
+                    libraryObject.doCheckOut(bookName);
+                    break;
+                case RETURN_PREVIOUSLY_ISSUED_BOOKS:
+                    System.out.println("ENTER THE NAME OF BOOK,YOU WANT TO RETURN:");
+                    scannerObject.nextLine();
+                    bookName = scannerObject.nextLine();
+                    libraryObject.doReturn(bookName);
+                    break;
+                case SHOW_ALL_BOOKS_ISSUED:
+                    System.out.println("ENTER THE NUMBER OF BOOKS ISSUED:");
+                    booksIssued = scannerObject.nextInt();
+                    studentObject.getBooksIssuedByStudent();
+                    break;
+                case EXIT:
+                    break;
 
+            }
 
+        } else {
+            System.out.println("PLEASE CHOOSE THE CORRECT OPTION?");
+        }
+        scannerObject.close();
     }
 }
